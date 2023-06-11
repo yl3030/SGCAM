@@ -903,6 +903,7 @@ main {
             transform: none;
     min-width: inherit;
     padding: 20px 40px;
+    max-width: 90%;
   }
   .banner_title h1 {
     font-size: 26px;
@@ -3294,7 +3295,7 @@ main {
 }
 
 .contact .contactForm .askItem_content {
-  width: calc(100% - 83px);
+  width: calc(100% - 84px);
 }
 
 .contact .contactForm .askItem_item {
@@ -3358,7 +3359,7 @@ main {
 }
 
 .contact .contactForm .askContent textarea {
-  width: calc(100% - 83px);
+  width: calc(100% - 84px);
   height: 110px;
   border: 1px solid #ACACAC;
   padding: 5px 10px;
