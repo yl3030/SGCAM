@@ -1,0 +1,86 @@
+<?php
+    $pageName = "product";
+    $pageTitle = "產品介紹";
+    $pageBannerPc = "../img/banner_product_pc.png";
+    $pageBannerM = "../img/banner_product_m.png";
+    $productMainPic = [
+        "../img/pic_1.png",
+        "../img/pic_3.png",
+        "../img/pic_6.png",
+        "../img/pic_7.png",
+        "../img/pic_5.png",
+        "../img/pic_8.png",
+    ];
+    $productMainTitle = [
+        "CNC車床CAD/CAM軟體",
+        "CNC車銑複合C、Y軸CAD/CAM軟體",
+        "CNC程式傳輸管理模擬軟體",
+        "CNC銑床2.5D CAD/CAM軟體",
+        "CNC產業機台專案開發CAD/CAM軟體",
+        "CNC球面異形四軸玻璃切割機",
+    ];
+?>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <?php include("../include/meta.php") ?>
+</head>
+<body>
+    <?php include("./header.php") ?>
+
+    <main>
+    
+        <?php include("../include/banner.php") ?>
+
+        <div class="breadcrumb-common container">
+            <ul class="d-flex align-items-center justify-content-end flex-wrap ms-auto">
+                <li class="breadcrumb-common_home">
+                    <a href="./index.php">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_104_604)">
+                                <path d="M15.7313 7.15265L8.55261 0.611477C8.23752 0.324321 7.76236 0.324353 7.44739 0.611446L0.268688 7.15268C0.0162826 7.38268 -0.0670923 7.73706 0.05622 8.05546C0.179564 8.37387 0.479875 8.57959 0.821343 8.57959H1.9679V15.1334C1.9679 15.3932 2.17859 15.6039 2.43843 15.6039H6.37324C6.63308 15.6039 6.84377 15.3932 6.84377 15.1334V11.1541H9.15633V15.1334C9.15633 15.3932 9.36701 15.6039 9.62686 15.6039H13.5615C13.8213 15.6039 14.032 15.3933 14.032 15.1334V8.57959H15.1788C15.5202 8.57959 15.8206 8.37384 15.9439 8.05546C16.0671 7.73703 15.9837 7.38268 15.7313 7.15265Z" fill="#ACACAC"/>
+                                <path d="M13.909 1.33533H10.749L14.3795 4.63645V1.80583C14.3795 1.54598 14.1689 1.33533 13.909 1.33533Z" fill="#ACACAC"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_104_604">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li><a class="active">產品介紹</a></li>
+            </ul>
+        </div>
+
+        <div class="product-class">
+            <div class="container">
+                <?php for ($i=0; $i < 6; $i++) { 
+                ?>
+                    <div class="product-class_item">
+                        <div class="product-class_pic"><img src="<?php echo $productMainPic[$i] ?>" alt=""></div>
+                        <a href="./product_secondClass.php" class="product-class_intro">
+                            <div class="product-class_intro_text">
+                                <h2><?php echo $productMainTitle[$i] ?></h2>
+                                <p>
+                                    國內市佔率最高的CNC車床CAD/CAM軟體全中文畫面，簡單易學、繪圖快速，最符合加工業使用的CAD/CAM軟體。可由AutoCAD製圖畫出工件外形，再匯入DXF圖檔，轉換為CNC程式碼。可由AutoC...
+                                </p>
+                            </div>
+                            <div class="product-class_arrow"><img src="../img/arrowLong-right-white.svg" alt=""></div>
+                        </a>
+                    </div>  
+                <?php } ?>
+            </div>
+        </div>
+
+        <?php include("../include/pagination.php") ?>
+
+    </main>
+
+    <?php include("./footer.php") ?>
+    <?php include("../include/script.php") ?>
+
+
+</body>
+</html>

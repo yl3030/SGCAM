@@ -1,0 +1,131 @@
+.about {
+    &_picText {
+        background-color: $gray-200;
+        position: relative;
+        margin-bottom: 150px;
+        &_pic {
+            width: 50%;
+            padding-bottom: 25%;
+            position: relative;
+            transform: translateY(-70px);
+            >img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                top: 0;
+                left: 0;
+            }
+        }
+        &_text {
+            width: 50%;
+            padding: 65px calc((100vw - 1320px) / 2 + 20px) 65px 60px;
+            p {
+                letter-spacing: 0.08em;
+                text-align: justify;
+                margin: 0;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: calc((100vw - 1320px) / 2 + 20px);
+            height: 100%;
+            background-color: #FAFAFA;
+            bottom: 0;
+            left: 0;
+
+        }
+        @media screen and (max-width: 1399px) {
+            &_text {
+                padding-right: calc((100vw - 1140px) / 2 + 20px);
+            }
+            &::before {
+                width: calc((100vw - 1140px) / 2 + 20px);
+            }
+        }
+        @media screen and (max-width: 1199px) {
+            &_text {
+                padding-right: calc((100vw - 960px) / 2 + 20px);
+            }
+            &::before {
+                width: calc((100vw - 960px) / 2 + 20px);
+            }
+        }
+        @media screen and (max-width: 991px) {
+            &_text {
+                padding: 45px 20px;
+            }
+            &::before {
+                width: 20px;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            padding: 0 20px;
+            background-color: transparent;
+            &_pic {
+                width: 100%;
+                padding-bottom: 50%;
+                transform: none;
+            }
+            &_text {
+                width: 100%;
+                padding: 30px 0;
+            }
+        }
+    }
+    &_slogan {
+        >.container {
+            background-color: #fff;
+            padding: 0 70px 70px;
+        }
+        &_item {
+            width: 145px;
+            height: 52px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-bottom: 30px;
+            &:first-child {
+                background-color: $main-color;
+                transform: translateY(-80%);
+            }
+            &:nth-child(2) {
+                background-color: $fifth-color;
+                transform: translateY(-50%);
+            }
+            &:nth-child(3) {
+                background-color: #55CFF5;
+                transform: translateY(-80%);
+            }
+            &:nth-child(4) {
+                background-color: #5AA6C7;
+                transform: translateY(-20%);
+            }
+        }
+        &_text {
+            line-height: 1.6;
+            letter-spacing: 0.08em;
+            margin: 0;
+            text-align: justify;
+        }
+        @media screen and (max-width: 991px) {
+            >.container {
+                padding: 0 50px 50px;
+                max-width: inherit;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            >.container {
+                padding: 0 20px 50px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            &_item {
+                font-size: 18px;
+            }
+        }
+    }
+}
