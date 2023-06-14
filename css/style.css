@@ -789,7 +789,7 @@ main {
 }
 
 .footer_contact span {
-  color: #fff;
+  color: #fff !important;
   font-size: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -2509,7 +2509,8 @@ main {
 }
 
 .inquiry-list_num button svg {
-  width: 70%;
+  width: 14px;
+  height: 13px;
 }
 
 .inquiry-list_num button svg path {

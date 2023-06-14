@@ -19,12 +19,14 @@ $(document).click(function (event) {
 });
 
 function navLink(){
-    $(".header_link_nav_first>li>a").each(function(){
-        let link = $(this).attr("data-link");
-        if($(window).width() >= 992) {
-            $(this).attr("href", link);
-        }else {
-            $(this).attr("href", "javascript:void(0)");
+    $(".header_link_nav_first>li").each(function(){
+        if($(this).hasClass("drop")) {
+            let link = $(this).children("a").attr("data-link");
+            if($(window).width() >= 992) {
+                $(this).children("a").attr("href", link);
+            }else {
+                $(this).children("a").attr("href", "javascript:void(0)");
+            }
         }
     })
 }
