@@ -1,16 +1,30 @@
-<?php 
-    $pageName = "media";
-    $pageTitle = "型錄";
-    $pageBannerPc = "../img/banner_catalogue_pc_v2.png";
-    $pageBannerM = "../img/banner_catalogue_pc_v2.png";
-    $cataloguePic = [
-        "../img/pic_4.png",
-        "../img/pic_5.png"
+<?php
+    $pageName = "product";
+    $pageTitle = "搜尋：CNC球面異形四軸玻璃切割機";
+    $pageBannerPc = "../img/banner_product_pc.png";
+    $pageBannerM = "../img/banner_product_m.png";
+    $productSecondPic = [
+        "../img/pic_9.png",
+        "../img/pic_10.png",
+        "../img/pic_11.png",
+        "../img/pic_12.png",
+        "../img/pic_13.png",
+        "../img/pic_14.png",
+        "../img/pic_9.png",
+        "../img/pic_10.png",
+        "../img/pic_11.png",
     ];
-    $catalogueTitle = [
-        "農自每平爸費；無買容照量活",
-        "大功不手沒童才放開公錯"
-    ]
+    $productSecondTitle = [
+        "7701",
+        "7706",
+        "7703",
+        "7705",
+        "7704",
+        "7702",
+        "7701",
+        "7706",
+        "7703",
+    ];
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +36,7 @@
     <?php include("./header.php") ?>
 
     <main>
+    
         <?php include("../include/banner.php") ?>
 
         <div class="breadcrumb-common container">
@@ -41,31 +56,34 @@
                         </svg>
                     </a>
                 </li>
-                <li><a class="active">型錄</a></li>
+                <li><a class="active">搜尋：CNC球面異形四軸玻璃切割機</a></li>
             </ul>
         </div>
 
-        <div class="catalogue mb-footer">
-            <div class="row">
-                <?php for($i=0;$i<2;$i++) { ?>
-                    <div class="col-md-6">
-                        <a href="" class="catalogue_item">
-                            <div class="catalogue_item_inner">
-                                <div class="catalogue_pic">
-                                    <img src="<?php echo $cataloguePic[$i] ?>" alt="">
-                                    <div class="catalogue_icon"><img src="../img/icon_download.svg" alt=""></div>
+        <div class="product-catalogue mb-footer">
+            <div class="container">
+                <div class="row">
+                    <?php for ($i=0; $i<9; $i++) { ?>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="./product_detail.php" class="product-catalogue_item">
+                                <div class="product-catalogue_pic">
+                                    <img src="<?php echo $productSecondPic[$i] ?>" alt="">
+                                    <div class="product-catalogue_arrow">
+                                        <img src="../img/arrowLong-right-white.svg" alt="">
+                                    </div>
                                 </div>
-                                <h3 class="catalogue_title">
-                                    <?php echo $catalogueTitle[$i] ?>
-                                </h3>
-                            </div>
-                        </a>
-                    </div>
-                <?php } ?>
+                                <h3 class="product-catalogue_title"><?php echo $productSecondTitle[$i] ?></h3>
+                            </a>
+                        </div>
+                    <?php } ?>
+                </div>
+                <?php include("../include/pagination.php") ?>
             </div>
         </div>
 
+
         
+
 
     </main>
 

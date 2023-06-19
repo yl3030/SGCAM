@@ -299,6 +299,7 @@ a:hover {
   border: 1px solid #DADADA;
   background-color: #fff;
   display: none;
+  z-index: 1;
 }
 
 .header_lang_hide a {
@@ -1249,6 +1250,90 @@ main {
     width: 45px;
     height: 37px;
   }
+}
+
+.cookies {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #173C73;
+  color: #fff;
+  padding: 30px 40px;
+  z-index: 200;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cookies a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cookies a:hover {
+  opacity: 0.7;
+}
+
+.cookies .btn-accept {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 200px;
+  height: 37px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cookies .btn-accept:hover {
+  background: #fff;
+  color: #173C73;
+}
+
+.cookies p {
+  font-weight: normal;
+  margin: 0;
+  width: calc(100% - 205px);
+  text-align: justify;
+  padding-right: 30px;
+  font-weight: 300;
+}
+
+.cookies p a {
+  margin-left: 10px;
+}
+
+.policy {
+  margin: 100px 0;
+}
+
+.policy_item {
+  margin-bottom: 30px;
+}
+
+.policy h2 {
+  font-size: 30px;
+  color: #173C73;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.policy p {
+  margin: 0;
+  font-size: 16px;
+  text-align: justify;
 }
 
 .home_banner {
@@ -2506,6 +2591,7 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
+  padding: 0;
 }
 
 .inquiry-list_num button svg {

@@ -124,6 +124,8 @@
         </div>
     </main>
 
+    <?php include("../include/cookies.php") ?>
+
     <?php include("./footer.php") ?>
     <?php include("../include/script.php") ?>
 

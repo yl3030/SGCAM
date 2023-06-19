@@ -37,6 +37,7 @@
                     <li class="drop">
                         <a href="" data-link="./product_mainClass.php" class="<?php if($pageName == "product") echo "active" ?>">產品介紹</a>
                         <ul class="header_link_nav_second">
+                            <li class="d-lg-none"><a href="./product_mainClass.php">全部</a></li>
                             <li><a href="./product_secondClass.php">CNC車床CAD/CAM軟體</a></li>
                             <li><a href="./product_secondClass.php">CNC車銑複合C、Y軸CAD/CAM軟體</a></li>
                             <li><a href="./product_secondClass.php">CNC程式傳輸管理模擬軟體</a></li>
