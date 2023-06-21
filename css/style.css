@@ -3470,6 +3470,21 @@ main {
   background-color: #55CFF5;
 }
 
+.contact_send {
+  width: calc(100% - 350px);
+  padding: 40px;
+}
+
+.contact_send h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #173C73;
+}
+
+.contact_send p {
+  font-size: 16px;
+}
+
 .contact_inform {
   width: 350px;
   background-color: #173C73;
@@ -3559,6 +3574,10 @@ main {
     width: 100%;
     padding: 35px;
   }
+  .contact_send {
+    width: 100%;
+    padding: 30px 30px 60px;
+  }
   .contact_inform {
     width: 100%;
     padding-top: 40px;
@@ -3616,6 +3635,15 @@ main {
   }
   .contact .contactForm .askContent label {
     margin-bottom: 10px;
+  }
+  .contact_send {
+    padding: 30px 20px 60px;
+  }
+  .contact_send h2 {
+    font-size: 24px;
+  }
+  .contact_send p {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

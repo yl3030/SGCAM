@@ -1,8 +1,8 @@
 <?php 
     $pageName = "download";
     $pageTitle = "軟體下載";
-    $pageBannerPc = "../img/banner_download_pc_v2.png";
-    $pageBannerM = "../img/banner_download_pc_v2.png";
+    $pageBannerPc = "../img/banner_download_pc_v3.png";
+    $pageBannerM = "../img/banner_download_pc_v3.png";
     $downloadTitle = [
         "車床CAD/CAM軟體",
         "銑床CAD/CAM軟體",

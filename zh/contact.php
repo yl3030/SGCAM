@@ -1,7 +1,7 @@
 <?php 
     $pageName = "contact";
     $pageTitle = "聯絡我們";
-    $pageBannerPc = "../img/banner_contact_pc.png";
+    $pageBannerPc = "../img/banner_contact_pc_v2.png";
     $pageBannerM = "../img/banner_contact_m.png";
 ?>
 

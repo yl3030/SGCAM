@@ -1,8 +1,8 @@
 <?php 
     $pageName = "about";
     $pageTitle = "關於我們";
-    $pageBannerPc = "../img/banner_about_pc.png";
-    $pageBannerM = "../img/banner_about_m.png";
+    $pageBannerPc = "../img/banner_about_pc_v2.png";
+    $pageBannerM = "../img/banner_about_m_v2.png";
 ?>
 
 <!DOCTYPE html>

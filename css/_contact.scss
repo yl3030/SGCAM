@@ -88,6 +88,18 @@
             }
         }
     }
+    &_send {
+        width: calc(100% - 350px);
+        padding: 40px;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: $main-color;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
     &_inform {
         width: 350px;
         background-color: $main-color;
@@ -153,6 +165,10 @@
             width: 100%;
             padding: 35px;
         }
+        &_send {
+            width: 100%;
+            padding: 30px 30px 60px;
+        }
         &_inform {
             width: 100%;
             padding-top: 40px;
@@ -209,6 +225,15 @@
                 label {
                     margin-bottom: 10px;
                 }
+            }
+        }
+        &_send {
+            padding: 30px 20px 60px;
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
             }
         }
     }
