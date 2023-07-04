@@ -629,6 +629,7 @@
     &-list {
         padding-right: calc((100vw - 1320px) / 2);
         position: relative;
+        width: 100%;
         h2 {
             margin: 0;
             position: absolute;
@@ -655,7 +656,7 @@
         }
         &_pic {
             width: 100%;
-            padding-bottom: 75%;
+            padding-bottom: 50%;
             position: relative;
             box-shadow: 0 5px 20px rgba(0,0,0,0.15);
             margin-bottom: 15px;
@@ -750,11 +751,30 @@
                 }
             }
         }
+        @media screen and (max-width: 575px) {
+            .row {
+                margin-left: -8px;
+                margin-right: -8px;
+                >div {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+            &_link {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+            &_pic {
+                margin-bottom: 10px;
+            }
+        }
     }
     &-form {
         padding-left: calc((100vw - 1320px) / 2);
         transform: translateY(-65px);
         margin-bottom: -65px;
+        width: 100%;
         &_inner {
             background-color: $main-color;
             padding: 65px calc((100vw - 1320px) / 2) 65px 0;
@@ -818,6 +838,32 @@
             padding-left: 0;
             &_inner {
                 padding-right: 0;
+                background-color: transparent;
+                padding-top: 0;
+            }
+            &_item {
+                border-color: $main-color;
+                label, input {
+                    color: $main-color;
+                }
+                label {
+                    &::after {
+                        background-color: $main-color;
+                    }
+                }
+                &.certify {
+                    .certify_update {
+                        path {
+                            fill: $main-color
+                        }
+                    }
+                }
+            }
+            form {
+                button {
+                    background-color: $main-color;
+                    color: #fff;
+                }
             }
         }
     }

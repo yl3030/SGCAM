@@ -953,6 +953,9 @@ main {
                 height: 16px;
                 margin: 0 10px;
                 cursor: pointer;
+                path {
+                    transition: $transition-common;
+                }
             }
             input {
                 width: calc(100% - 75px - 40px - 36px);

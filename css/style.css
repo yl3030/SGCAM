@@ -1124,6 +1124,11 @@ main {
   cursor: pointer;
 }
 
+.contactForm_item.certify .certify_update path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .contactForm_item.certify input {
   width: calc(100% - 75px - 40px - 36px);
 }
@@ -2501,6 +2506,7 @@ main {
 .inquiry-list {
   padding-right: calc((100vw - 1320px) / 2);
   position: relative;
+  width: 100%;
 }
 
 .inquiry-list h2 {
@@ -2534,7 +2540,7 @@ main {
 
 .inquiry-list_pic {
   width: 100%;
-  padding-bottom: 75%;
+  padding-bottom: 50%;
   position: relative;
   -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
@@ -2664,11 +2670,29 @@ main {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .inquiry-list .row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .inquiry-list .row > div {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .inquiry-list_link h3 {
+    font-size: 16px;
+  }
+  .inquiry-list_pic {
+    margin-bottom: 10px;
+  }
+}
+
 .inquiry-form {
   padding-left: calc((100vw - 1320px) / 2);
   -webkit-transform: translateY(-65px);
           transform: translateY(-65px);
   margin-bottom: -65px;
+  width: 100%;
 }
 
 .inquiry-form_inner {
@@ -2753,6 +2777,24 @@ main {
   }
   .inquiry-form_inner {
     padding-right: 0;
+    background-color: transparent;
+    padding-top: 0;
+  }
+  .inquiry-form_item {
+    border-color: #173C73;
+  }
+  .inquiry-form_item label, .inquiry-form_item input {
+    color: #173C73;
+  }
+  .inquiry-form_item label::after {
+    background-color: #173C73;
+  }
+  .inquiry-form_item.certify .certify_update path {
+    fill: #173C73;
+  }
+  .inquiry-form form button {
+    background-color: #173C73;
+    color: #fff;
   }
 }
 
