@@ -1107,6 +1107,17 @@ main {
             margin-left: 10px;
         }
     }
+    @media screen and (max-width: 767px) {
+        padding: 30px 20px;
+        p {
+            font-size: 14px;
+            width: 100%;
+            padding: 0 0 30px;
+        }
+        .btn-accept {
+            width: 100%;
+        }
+    }
 }
 
 .policy {

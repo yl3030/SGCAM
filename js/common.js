@@ -44,3 +44,7 @@ $(".header_menu").click(function(){
     $(this).toggleClass("active");
     $(".header_link").toggleClass("active");
 })
+
+$(".btn-accept").click(function(){
+    $(".cookies").fadeOut(300);
+})

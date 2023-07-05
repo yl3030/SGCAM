@@ -10,12 +10,12 @@
         <div class="home_banner">
             <img class="home_banner_pic d-md-block d-none" src="../img/banner_home.png" alt="">
             <img class="home_banner_pic d-md-none" src="../img/banner_home_m.png" alt="">
-            <h1 class="home_banner_title">
+            <!-- <h1 class="home_banner_title">
                 <span>技術</span>
                 <span>創新</span>
                 <span>服務</span>
                 <span>人性化</span>
-            </h1>
+            </h1> -->
         </div>
 
         <div class="home_about">
