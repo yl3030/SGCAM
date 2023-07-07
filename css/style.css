@@ -1355,13 +1355,38 @@ main {
   text-align: justify;
 }
 
-.home_banner {
+.home_banner .swiper-slide {
   width: 100%;
+  padding-bottom: 42.13%;
   position: relative;
 }
 
+.home_banner_swiper .swiper-button-next, .home_banner_swiper .swiper-button-prev {
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.home_banner_swiper .swiper-button-next::after, .home_banner_swiper .swiper-button-prev::after {
+  display: none;
+}
+
+.home_banner_swiper .swiper-button-next img, .home_banner_swiper .swiper-button-prev img {
+  width: 90%;
+}
+
+.home_banner_swiper:hover .swiper-button-next, .home_banner_swiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
 .home_banner_pic {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
 }
@@ -1419,6 +1444,9 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  .home_banner .swiper-slide {
+    padding-bottom: 53.44%;
+  }
   .home_banner_title span {
     font-size: 42px;
     -webkit-text-stroke: 1px #000;

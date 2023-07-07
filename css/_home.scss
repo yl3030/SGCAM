@@ -1,13 +1,38 @@
 .home {
     &_banner {
-        width: 100%;
-        // padding-bottom: 42%;
-        position: relative;
-        &_pic {
-            // position: absolute;
+        .swiper-slide {
             width: 100%;
-            // height: 100%;
-            // object-fit: cover;
+            padding-bottom: 42.13%;
+            position: relative;
+        }
+        &_swiper {
+            .swiper-button {
+                &-next, &-prev {
+                    width: 35px;
+                    height: 35px;
+                    opacity: 0;
+                    transition: $transition-common;
+                    &::after {
+                        display: none;
+                    }
+                    img {
+                        width: 90%;
+                    }
+                }
+            }
+            &:hover {
+                .swiper-button {
+                    &-next, &-prev {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &_pic {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             top: 0;
             left: 0;
         }
@@ -63,6 +88,9 @@
         }
         @media screen and (max-width: 767px) {
             // padding-bottom: 60%;
+            .swiper-slide {
+                padding-bottom: 53.44%;
+            }
             &_title {
                 span {
                     font-size: 42px;

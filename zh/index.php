@@ -8,14 +8,32 @@
 
     <main>
         <div class="home_banner">
-            <img class="home_banner_pic d-md-block d-none" src="../img/banner_home.png" alt="">
-            <img class="home_banner_pic d-md-none" src="../img/banner_home_m.png" alt="">
+            <!-- <img class="home_banner_pic d-md-block d-none" src="../img/banner_home.png" alt=""> -->
+            <!-- <img class="home_banner_pic d-md-none" src="../img/banner_home_m.png" alt=""> -->
             <!-- <h1 class="home_banner_title">
                 <span>技術</span>
                 <span>創新</span>
                 <span>服務</span>
                 <span>人性化</span>
             </h1> -->
+            <div class="swiper-container home_banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="home_banner_pic d-md-block d-none" src="../img/banner_home.png" alt="">
+                        <img class="home_banner_pic d-md-none" src="../img/banner_home_m.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="home_banner_pic d-md-block d-none" src="../img/banner_home.png" alt="">
+                        <img class="home_banner_pic d-md-none" src="../img/banner_home_m.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="home_banner_pic d-md-block d-none" src="../img/banner_home.png" alt="">
+                        <img class="home_banner_pic d-md-none" src="../img/banner_home_m.png" alt="">
+                    </div>
+                </div>     
+                <!-- <div class="swiper-button-next"><img src="../img/arrowLong-right-blue.svg" alt=""></div> -->
+                <!-- <div class="swiper-button-prev"><img src="../img/arrowLong-left-blue.svg" alt=""></div> -->
+            </div>
         </div>
 
         <div class="home_about">
@@ -130,6 +148,25 @@
     <?php include("../include/script.php") ?>
 
     <script>
+        var swiper = new Swiper(".home_banner_swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            speed: 1000,
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        })
         var swiper = new Swiper(".home_product_swiper", {
             slidesPerView: 1.5,
             spaceBetween: 30,
@@ -157,7 +194,7 @@
                     slidesPerGroup: 3,
                 }
             }
-        })
+        });
     </script>
 
 </body>
