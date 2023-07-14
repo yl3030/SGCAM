@@ -660,14 +660,51 @@
             position: relative;
             box-shadow: 0 5px 20px rgba(0,0,0,0.15);
             margin-bottom: 15px;
-            >img {
+            &_link {
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                overflow: hidden;
                 top: 0;
                 left: 0;
+                >img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    top: 0;
+                    left: 0;
+                    transition: $transition-common;
+                }
+                &:hover {
+                    >img {
+                        transform: scale(1.1);
+                    }
+                    .inquiry-list_pic_mask {
+                        opacity: 1;
+                    }
+                }
             }
+            &_mask {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: rgba(0,0,0,0.6);
+                opacity: 0;
+                transition: $transition-common;
+            }
+        }
+        &_delete {
+            width: 40px;
+            top: 5px;
+            right: 3px;
+            height: auto;
+            object-fit: inherit;
+            left: inherit;
+            cursor: pointer;
+            position: absolute;
         }
         &_link {
             display: block;
@@ -818,7 +855,7 @@
                     background-color: rgba(255,255,255,0.5);
                 }
             }
-            input {
+            input, textarea {
                 color: #fff;
             }
         }
@@ -843,7 +880,7 @@
             }
             &_item {
                 border-color: $main-color;
-                label, input {
+                label, input, textarea {
                     color: $main-color;
                 }
                 label {

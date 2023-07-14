@@ -56,10 +56,16 @@
                         <?php for ($i=0;$i<4;$i++){ ?>
                             <div class="col-lg-3 col-md-4 col-6">
                                 <div class="inquiry-list_item">
-                                    <a href="./product_detail.php" class="inquiry-list_link">
-                                        <div class="inquiry-list_pic"><img src="<?php echo $inquiryPic[$i] ?>" alt=""></div>
+                                    <div class="inquiry-list_link">
+                                        <div class="inquiry-list_pic">
+                                            <a href="./product_detail.php" class="inquiry-list_pic_link">
+                                                <img src="<?php echo $inquiryPic[$i] ?>" alt="">
+                                                <div class="inquiry-list_pic_mask"></div>
+                                            </a>
+                                            <img class="inquiry-list_delete" src="../img/icon_x.svg" alt="">
+                                        </div>
                                         <h3><?php echo $inquiryTitle[$i] ?></h3>
-                                    </a>
+                                    </div>
                                     <div class="inquiry-list_num">
                                         <button class="inquiry-list_btn inquiry-list_minus">
                                             <svg width="14" height="3" viewBox="0 0 14 3" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,25 +93,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="contactForm_item inquiry-form_item">
+                                    <label for="">姓名</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="contactForm_item inquiry-form_item">
                                     <label for="">公司</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contactForm_item inquiry-form_item">
-                                    <label for="">部門</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="contactForm_item inquiry-form_item">
-                                    <label for="">地址</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contactForm_item inquiry-form_item">
-                                    <label for="">負責人</label>
                                     <input type="text">
                                 </div>
                             </div>
@@ -121,16 +115,10 @@
                                     <input type="email">
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="contactForm_item inquiry-form_item">
-                                    <label for="">傳真</label>
-                                    <input type="number">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="contactForm_item inquiry-form_item">
-                                    <label for="">部門</label>
-                                    <input type="text">
+                            <div class="col-12">
+                                <div class="contactForm_item inquiry-form_item textarea">
+                                    <label for="">訊息</label>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -143,14 +131,16 @@
                                     </svg>  
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <button class="ms-auto">
+                                    <span>送出</span>
+                                    <svg width="33" height="12" viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M33 6.09174C33 5.53945 32.5523 5.09174 32 5.09174H0.696968V7.09174H32C32.5523 7.09174 33 6.64402 33 6.09174Z" fill="white"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.2944 2.18085L30.363 6.0918L25.2944 10.0028L26.5161 11.5862L32.6109 6.88352C32.8563 6.69418 33 6.40175 33 6.0918C33 5.78186 32.8563 5.48943 32.6109 5.30008L26.5161 0.597412L25.2944 2.18085Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
-                        <button>
-                            <span>送出</span>
-                            <svg width="33" height="12" viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M33 6.09174C33 5.53945 32.5523 5.09174 32 5.09174H0.696968V7.09174H32C32.5523 7.09174 33 6.64402 33 6.09174Z" fill="white"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.2944 2.18085L30.363 6.0918L25.2944 10.0028L26.5161 11.5862L32.6109 6.88352C32.8563 6.69418 33 6.40175 33 6.0918C33 5.78186 32.8563 5.48943 32.6109 5.30008L26.5161 0.597412L25.2944 2.18085Z" fill="white"/>
-                            </svg>
-                        </button>
                     </form>
                 </div>
             </div>

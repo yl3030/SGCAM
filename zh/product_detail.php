@@ -80,7 +80,7 @@
                                     <li>圖形可以做單方向或雙方向的縮放動作，微調快速。</li>
                                     <li>快速有效率贏得商機，降低生產成本、提升競爭力的好幫手。</li>
                                 </ul>
-                                <button>
+                                <button class="btn-addCart">
                                     <img src="../img/cart-white.svg" alt="">
                                     <span>加入詢價車</span>
                                 </button>

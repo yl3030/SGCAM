@@ -48,3 +48,7 @@ $(".header_menu").click(function(){
 $(".btn-accept").click(function(){
     $(".cookies").fadeOut(300);
 })
+
+$(".btn-addCart").click(function(){
+    $(".header_cart_add").fadeIn(300).delay(2000).fadeOut(300);
+})

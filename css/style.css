@@ -263,6 +263,7 @@ a:hover {
   height: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
 .header_cart img {
@@ -271,6 +272,18 @@ a:hover {
 
 .header_cart:hover {
   background-color: #4EE9F3;
+}
+
+.header_cart_add {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+  padding: 15px 20px;
+  z-index: 10;
+  white-space: nowrap;
+  display: none;
+  background-color: #F5B430;
+  color: #fff;
 }
 
 .header_lang {
@@ -538,6 +551,12 @@ a:hover {
   }
   .header_cart_inner span {
     font-size: 16px;
+  }
+  .header_cart_add {
+    position: fixed;
+    top: inherit;
+    bottom: 20px;
+    right: 20px;
   }
   .header_lang {
     width: 100%;
@@ -1106,7 +1125,21 @@ main {
           transform: translateY(-50%);
 }
 
+.contactForm_item.textarea {
+  height: 100px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 10px;
+}
+
 .contactForm_item input {
+  width: calc(100% - 75px);
+  padding: 0 10px;
+  height: 100%;
+}
+
+.contactForm_item textarea {
   width: calc(100% - 75px);
   padding: 0 10px;
   height: 100%;
@@ -2581,7 +2614,16 @@ main {
   margin-bottom: 15px;
 }
 
-.inquiry-list_pic > img {
+.inquiry-list_pic_link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.inquiry-list_pic_link > img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2589,6 +2631,41 @@ main {
      object-fit: cover;
   top: 0;
   left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inquiry-list_pic_link:hover > img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.inquiry-list_pic_link:hover .inquiry-list_pic_mask {
+  opacity: 1;
+}
+
+.inquiry-list_pic_mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inquiry-list_delete {
+  width: 40px;
+  top: 5px;
+  right: 3px;
+  height: auto;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+  left: inherit;
+  cursor: pointer;
+  position: absolute;
 }
 
 .inquiry-list_link {
@@ -2783,7 +2860,7 @@ main {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.inquiry-form_item input {
+.inquiry-form_item input, .inquiry-form_item textarea {
   color: #fff;
 }
 
@@ -2817,7 +2894,7 @@ main {
   .inquiry-form_item {
     border-color: #173C73;
   }
-  .inquiry-form_item label, .inquiry-form_item input {
+  .inquiry-form_item label, .inquiry-form_item input, .inquiry-form_item textarea {
     color: #173C73;
   }
   .inquiry-form_item label::after {

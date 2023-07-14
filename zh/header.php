@@ -19,6 +19,7 @@
                         <img src="../img/cart-blue.svg" alt="">
                         <span>詢價車</span>
                     </div>
+                    <div class="header_cart_add">已成功加入詢價車！</div>
                 </a>
                 <div class="header_lang d-lg-flex">
                     <div class="header_lang_active d-flex align-items-center">
