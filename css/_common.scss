@@ -239,8 +239,6 @@ a {
             position: absolute;
             top: calc(100% + 5px);
             right: 0;
-            // background-color: #fff;
-            // box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
             padding: 15px 20px;
             z-index: 10;
             white-space: nowrap;
@@ -683,6 +681,9 @@ main {
         }
         a {
             color: #fff;
+            &:hover {
+                color: $third-color;
+            }
         }
     }
     &_contact {
@@ -710,7 +711,7 @@ main {
                     }
                 }
                 span {
-                    color: $third-color;
+                    color: $third-color !important;
                 }
             }
         }
@@ -719,6 +720,14 @@ main {
         font-size: 14px;
         color: #fff;
         margin: 0;
+        a {
+            color: #fff !important;
+            text-decoration: underline;
+            transition: $transition-common;
+            &:hover {
+                color: $third-color !important;
+            }
+        }
     }
     @media screen and (max-width: 575px) {
         &_contact {

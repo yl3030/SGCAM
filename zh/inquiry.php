@@ -62,7 +62,7 @@
                                                 <img src="<?php echo $inquiryPic[$i] ?>" alt="">
                                                 <div class="inquiry-list_pic_mask"></div>
                                             </a>
-                                            <img class="inquiry-list_delete" src="../img/icon_x.svg" alt="">
+                                            <div class="inquiry-list_delete"><img src="../img/icon_x.svg" alt=""></div>
                                         </div>
                                         <h3><?php echo $inquiryTitle[$i] ?></h3>
                                     </div>

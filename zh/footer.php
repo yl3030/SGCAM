@@ -77,6 +77,6 @@
                 </li>
             </ul>
         </div>
-        <p class="footer_copyright">Website Designed by Lets Media EZB2B</p>
+        <p class="footer_copyright">Website <a href="">Designed</a> by Lets Media <a href="">EZB2B</a></p>
     </div>
 </footer>

@@ -108,9 +108,34 @@
                         </div>
                     </div>
                 </div>
-            </div>       
+            </div>     
+            
+            
         
             <div class="product-detail_content pb-footer">
+                <div class="mb-5">我是編輯器</div>
+                <div class="product-detail_content_list">
+                    <div class="product-detail_content_list_item">
+                        <h3>主功能介紹</h3>
+                        <ul>
+                            <li>全中文畫面，易學、易懂、易用，為加工業最適合的加工軟體，操作軟體完全不用背指令。</li>
+                            <li>可由AutoCAD製圖畫出工件外形，再匯入DXF圖檔，轉換為CNC程式碼。</li>
+                            <li>參數式的加工資料設定，作CAM只需三個步驟：（1）選擇工法（2）指定加工參數（3）計算、轉出加工G碼。</li>
+                            <li>參數式的資料設定，圖形改變後，加工碼會自動隨之改變。</li>
+                        </ul>
+                    </div>
+                    <div class="product-detail_content_list_item">
+                        <h3>智慧型功能</h3>
+                        <ul>
+                            <li>工法和加工的輪廓可直接複製修改，不必再重新指定。</li>
+                            <li>自動清角可自動清除前一把刀具，所留下來的角落殘料。</li>
+                            <li>鑽孔時依據孔徑大小，自動搜尋鑽孔的加工位置，不必每一孔都去點選指定。</li>
+                            <li>字型可自動截割輪廓外圍不用慢慢編修。</li>
+                            <li>支援單筆劃字型刻字。</li>
+                            <li>加工路徑最佳化，各加工路徑間依最短距離自動計算，且可指定各加工路徑間不提刀以縮短加工時間，達到最佳之加工效率。</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="product-detail_content_video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/J1C8sGoI9B0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
@@ -159,6 +184,24 @@
             <a href=""><img src="../img/arrowLong-right-white.svg" alt=""></a>
         </div>
 
+        <div class="product-popup">
+            <div class="product-popup_content">
+                <div class="swiper-container product-popup_swiper">
+                    <div class="swiper-wrapper">
+                        <?php 
+                            for ($i=0; $i<6; $i++) {
+                        ?>
+                            <div class="swiper-slide">
+                                <div class="product-popup_swiper_pic"><img src="<?php echo $productDetailPic[$i] ?>" alt=""></div>
+                            </div>
+                        <?php } ?>
+                    </div>      
+                </div>
+                <div class="product-popup-next"><img src="../img/arrowLong-right-blue.svg" alt=""></div>
+                <div class="product-popup-prev"><img src="../img/arrowLong-left-blue.svg" alt=""></div>
+            </div>
+        </div>
+
     </main>
 
     <?php include("./footer.php") ?>
@@ -169,6 +212,7 @@
             slidesPerView: 3,
             speed: 800,
             spaceBetween: 6,
+            allowTouchMove: false,
             watchSlidesProgress: true,
             navigation: {
                 nextEl: ".product-detail_thumbs-next",
@@ -190,6 +234,33 @@
                 swiper: swiperThumbs,
             },
             speed: 800,
+        });
+        var swiperPopup = new Swiper(".product-popup_swiper", {
+            slidesPerView: 1,        
+            observeParents:true,
+            observer:true,
+            navigation: {
+                nextEl: ".product-popup-next",
+                prevEl: ".product-popup-prev",
+            },
+            speed: 800,
+        });
+
+        $(".product-detail_swiper .product-detail_swiper_pic").click(function(){
+            let index = $(this).parents(".swiper-slide").index();
+            // $(".product-popup_swiper").find(".swiper-slide").
+            $(".product-popup").fadeIn(300).css("display","flex");
+            console.log(index);
+            swiperPopup.slideTo(index, 1000, true);
+        })
+
+        $(".product-popup").click(function (event) {
+            var popupPic = $(".product-popup_content");
+            if (!popupPic.is(event.target) && popupPic.has(event.target).length === 0) {
+                $(this).fadeOut(300);
+                let index = $(this).find(".swiper-slide.swiper-slide-active").index();
+                swiperMain.slideTo(index, 1000, true);
+            }
         });
     </script>
 
