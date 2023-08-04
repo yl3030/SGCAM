@@ -312,7 +312,7 @@ a:hover {
   border: 1px solid #DADADA;
   background-color: #fff;
   display: none;
-  z-index: 1;
+  z-index: 4;
 }
 
 .header_lang_hide a {

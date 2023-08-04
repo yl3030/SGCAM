@@ -248,9 +248,7 @@
 
         $(".product-detail_swiper .product-detail_swiper_pic").click(function(){
             let index = $(this).parents(".swiper-slide").index();
-            // $(".product-popup_swiper").find(".swiper-slide").
             $(".product-popup").fadeIn(300).css("display","flex");
-            console.log(index);
             swiperPopup.slideTo(index, 1000, true);
         })
 
