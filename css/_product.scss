@@ -194,9 +194,12 @@
         width: 100%;
         background: linear-gradient(180deg, #FFFFFF 45.83%, rgba(255, 255, 255, 0) 100%);
         padding: 45px 60px 90px;
-        margin: 0 auto;
+        margin: -40px auto 0;
         p {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: 500;
+            color: $main-color;
         }
         &_list {
             margin-bottom: 60px;
