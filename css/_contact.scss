@@ -3,7 +3,7 @@
     width: 100%;
     .contactForm {
         width: calc(100% - 350px);
-        padding: 40px 65px 35px 30px;
+        padding: 50px 65px 45px 30px;
         &_item {
             border-color: $gray-400;
             label {
@@ -19,10 +19,10 @@
         .askItem {
             margin-bottom: 15px;
             label {
-                width: 68px;
+                width: 80px;
             }
             &_content {
-                width: calc(100% - 84px);
+                width: calc(100% - 96px);
             }
             &_item {
                 display: flex;
@@ -63,10 +63,10 @@
             margin-bottom: 25px;
             width: 100%;
             label {
-                width: 68px;
+                width: 80px;
             }
             textarea {
-                width: calc(100% - 84px);
+                width: calc(100% - 96px);
                 height: 110px;
                 border: 1px solid $gray-400;
                 padding: 5px 10px;
@@ -86,6 +86,9 @@
             &:hover {
                 background-color: $third-color;
             }
+        }
+        .highlight {
+            color: rgb(219, 26, 26);
         }
     }
     &_send {
@@ -110,7 +113,7 @@
         ul {
             width: 100%;
             li {
-                margin-bottom: 58px;
+                margin-bottom: 50px;
                 position: relative;
                 a {
                     color: #fff !important;
@@ -156,6 +159,27 @@
                     height: 100%;
                     top: 0;
                     left: 0;
+                }
+            }
+        }
+    }
+    &-eng {
+        .contactForm {
+            &_item {
+                label {
+                    width: 110px;
+                }
+                input, textarea {
+                    width: calc(100% - 110px);
+                }
+            }
+            .askItem, .askContent {
+                flex-wrap: wrap;
+                label, textarea {
+                    width: 100%;
+                }
+                &_content {
+                    width: 100%;
                 }
             }
         }

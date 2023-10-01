@@ -38,85 +38,85 @@
         </div>
 
         <div class="container">
-            <div class="contact d-lg-flex flex-wrap mb-footer">
+            <div class="contact contact-eng d-lg-flex flex-wrap mb-footer">
                 <form action="" class="contactForm">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="contactForm_item inquiry-form_item">
-                                <label for="">公司<span class="highlight">*</span></label>
+                                <label for="">Company<span class="highlight">*</span></label>
                                 <input type="text" require>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="contactForm_item inquiry-form_item">
-                                <label for="">聯絡人<span class="highlight">*</span></label>
+                                <label for="">Name<span class="highlight">*</span></label>
                                 <input type="text" require>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="contactForm_item inquiry-form_item">
-                                <label for="">電話<span class="highlight">*</span></label>
+                                <label for="">Tel<span class="highlight">*</span></label>
                                 <input type="number" require>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="contactForm_item inquiry-form_item">
-                                <label for="">分機</label>
+                                <label for="">Extension</label>
                                 <input type="number">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="contactForm_item inquiry-form_item">
-                                <label for="">信箱</label>
+                                <label for="">Email</label>
                                 <input type="email">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="contactForm_item inquiry-form_item">
-                                <label for="">地址</label>
+                                <label for="">Address</label>
                                 <input type="text">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="askItem d-flex flex-wrap">
-                                <label for="">詢問項目<span class="highlight">*</span></label>
-                                <div class="askItem_content d-flex flex-wrap ms-sm-3">
+                                <label for="">Inquiry Item<span class="highlight">*</span></label>
+                                <div class="askItem_content d-flex flex-wrap pt-2">
                                     <div class="askItem_item">
                                         <div class="askItem_check"><img src="../img/icon_check.svg" alt=""></div>
-                                        <span>車床</span>
+                                        <span>Lathe</span>
                                     </div>
                                     <div class="askItem_item">
                                         <div class="askItem_check"><img src="../img/icon_check.svg" alt=""></div>
-                                        <span>車銑</span>
+                                        <span>Turnmill</span>
                                     </div>
                                     <div class="askItem_item">
                                         <div class="askItem_check"><img src="../img/icon_check.svg" alt=""></div>
-                                        <span>銑床</span>
+                                        <span>Mill</span>
                                     </div>
                                     <div class="askItem_item">
                                         <div class="askItem_check"><img src="../img/icon_check.svg" alt=""></div>
-                                        <span>傳輸管理</span>
+                                        <span>Transfer Manager</span>
                                     </div>
                                     <div class="askItem_item">
                                         <div class="askItem_check"><img src="../img/icon_check.svg" alt=""></div>
-                                        <span>CNC產業軟體開發</span>
+                                        <span>CNC industrial software development</span>
                                     </div>
                                     <div class="askItem_item">
                                         <div class="askItem_check"><img src="../img/icon_check.svg" alt=""></div>
-                                        <span>玻璃切割機</span>
+                                        <span>glass cutting machine</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="askContent d-flex flex-wrap">
-                                <label for="">詢問內容<span class="highlight">*</span></label>
-                                <textarea require class="ms-sm-3" name="" id="" cols="30" rows="10"></textarea>
+                                <label for="">Content<span class="highlight">*</span></label>
+                                <textarea require class="mt-2" name="" id="" cols="30" rows="10"></textarea>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="contactForm_item inquiry-form_item certify">
-                                <label for="">驗證碼<span class="highlight">*</span></label>
+                                <label for="">Certify<span class="highlight">*</span></label>
                                 <input type="number" require>
                                 <img class="certify_num" src="../img/certify.png" alt="">
                                 <img class="certify_update" src="../img/icon_update_blue.svg" alt="">

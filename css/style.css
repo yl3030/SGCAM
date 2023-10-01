@@ -3735,7 +3735,7 @@ main {
 
 .contact .contactForm {
   width: calc(100% - 350px);
-  padding: 40px 65px 35px 30px;
+  padding: 50px 65px 45px 30px;
 }
 
 .contact .contactForm_item {
@@ -3759,11 +3759,11 @@ main {
 }
 
 .contact .contactForm .askItem label {
-  width: 68px;
+  width: 80px;
 }
 
 .contact .contactForm .askItem_content {
-  width: calc(100% - 84px);
+  width: calc(100% - 96px);
 }
 
 .contact .contactForm .askItem_item {
@@ -3823,11 +3823,11 @@ main {
 }
 
 .contact .contactForm .askContent label {
-  width: 68px;
+  width: 80px;
 }
 
 .contact .contactForm .askContent textarea {
-  width: calc(100% - 84px);
+  width: calc(100% - 96px);
   height: 110px;
   border: 1px solid #ACACAC;
   padding: 5px 10px;
@@ -3849,6 +3849,10 @@ main {
 
 .contact .contactForm button:hover {
   background-color: #55CFF5;
+}
+
+.contact .contactForm .highlight {
+  color: #db1a1a;
 }
 
 .contact_send {
@@ -3884,7 +3888,7 @@ main {
 }
 
 .contact_inform ul li {
-  margin-bottom: 58px;
+  margin-bottom: 50px;
   position: relative;
 }
 
@@ -3948,6 +3952,27 @@ main {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.contact-eng .contactForm_item label {
+  width: 110px;
+}
+
+.contact-eng .contactForm_item input, .contact-eng .contactForm_item textarea {
+  width: calc(100% - 110px);
+}
+
+.contact-eng .contactForm .askItem, .contact-eng .contactForm .askContent {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-eng .contactForm .askItem label, .contact-eng .contactForm .askItem textarea, .contact-eng .contactForm .askContent label, .contact-eng .contactForm .askContent textarea {
+  width: 100%;
+}
+
+.contact-eng .contactForm .askItem_content, .contact-eng .contactForm .askContent_content {
+  width: 100%;
 }
 
 @media screen and (max-width: 991px) {
